@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+.center {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.bunner {
+  width: 100%;
+  height: 900px;
+  background: url('./img/atrium-bunner.jpg');
+}
+
+.bunner-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 900px;
+  color: #fff;
+}
+
+.title {
+  font-size: 70px;
+  margin: 0px 0px 20px 0px;
+  transform: translate(0px, 120%);
+  transition: all 0.8s ease;
+  opacity: 0;
+}
+
+.title.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.text {
+  font-size: 30px;
+  transform: translate(0px, 120%);
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+}
+
+.text.active {
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.4s;
+  opacity: 1;
+}
+
+.pictures {
+  padding: 80px 0px 80px 0px;
+}
+
+.picture {
+  transform: scale(0);
+  transition: all 0.8s ease 0s;
+}
+
+.picture.active {
+  transform: scale(1);
+}
+
+.pictures-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.pictures-box img {
+  width: 525px;
+  height: 200px;
+  object-fit: cover;
+}
